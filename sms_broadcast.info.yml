@@ -1,7 +1,7 @@
-name: 'sms_broadcast'
+name: 'SMS Broadcast'
 type: module
-description: 'My Awesome Module'
+description: 'SMS Broadcast moduke'
 core: 8.x
-package: 'Custom'
+package: 'SRG'
 dependencies:
   - twilio

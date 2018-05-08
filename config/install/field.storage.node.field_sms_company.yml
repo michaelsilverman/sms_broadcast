@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.sms_message
+  module:
+    - text
+id: node.sms_message.field_sms_company
+field_name: field_sms_company
+entity_type: node
+type: string_long
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

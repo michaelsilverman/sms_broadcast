@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sms_message
+    - node.type.sms_message
+  module:
+    - text
+id: node.sms_message.field_sms_message
+field_name: field_sms_message
+entity_type: node
+bundle: sms_message
+label: 'Message'
+description: 'SMS message to send.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: string_long

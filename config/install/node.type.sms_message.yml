@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - sms_broadcast
+name: 'SMS Message'
+type: sms_message
+description: 'Content type used to add <em>SMS Message</em>.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
