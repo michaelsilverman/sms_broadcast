@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains sms_broadcast.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function sms_broadcast_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the sms_broadcast module.
+    case 'help.page.sms_broadcast':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function sms_broadcast_theme() {
+  return [
+    'sms_broadcast' => [
+      'render element' => 'children',
+    ],
+  ];
+}
