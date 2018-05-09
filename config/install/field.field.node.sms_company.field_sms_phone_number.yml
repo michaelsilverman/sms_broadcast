@@ -2,20 +2,20 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_sms_company_name
+    - field.storage.node.field_sms_phone_number
     - node.type.sms_company
   module:
     - text
-id: node.sms_company.field_sms_company_name
-field_name: field_sms_company_name
+id: node.sms_company.field_sms_phone_number
+field_name: field_sms_phone_number
 entity_type: node
 bundle: sms_company
-label: 'Company name'
-description: 'Company responsible for text message.'
+label: 'Twilio phone number'
+description: 'Phone number used by company.'
 required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   display_summary: false
-field_type: string_long
+field_type: telephone

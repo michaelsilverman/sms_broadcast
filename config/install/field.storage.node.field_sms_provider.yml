@@ -10,7 +10,7 @@ dependencies:
 id: node.field_sms_provider
 field_name: field_sms_message
 entity_type: node
-type: string_long
+type: list_string
 settings: {  }
 module: text
 locked: false

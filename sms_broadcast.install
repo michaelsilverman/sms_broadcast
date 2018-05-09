@@ -17,19 +17,22 @@ use Drupal\Core\Entity\Sql;
 /**
  * Implements hook_install().
  */
-function srg_dataentry_install() {
+function sms_broadcast_install() {
 
 }
 
 /**
  * Implements hook_uninstall().
  */
-function sms_broasdcast_uninstall() {
+function sms_broadcast_uninstall() {
     $configs = Drupal::configFactory()->listAll();
     foreach ($configs as $config) {
         if (strpos($config, 'node.field_sms_') > 1) {
+            Drupal::logger('SMS')->info($config);
             Drupal::configFactory()->getEditable($config)->delete();
         }
+
+  //      Drupal::configFactory()->getEditable('field.storage.node.field_sms_message')->delete();
     }
 
 

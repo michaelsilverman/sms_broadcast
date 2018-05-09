@@ -4,4 +4,5 @@ description: 'SMS Broadcast module'
 core: 8.x
 package: 'SRG'
 dependencies:
+  - telephone
   - devel

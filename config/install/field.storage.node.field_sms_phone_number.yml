@@ -7,10 +7,10 @@ dependencies:
   enforced:
     module:
       - sms_broadcast
-id: node.field_sms_provider
-field_name: field_sms_message
+id: node.field_sms_phone_number
+field_name: field_sms_phone_number
 entity_type: node
-type: string_long
+type: telephone
 settings: {  }
 module: text
 locked: false
