@@ -1,0 +1,36 @@
+<?php
+
+use Drupal\Core\Database;
+use Drupal\Core\Database\Connection;
+use Drupal\Core\Entity\Sql;
+// $Id$
+
+/**
+ * @file
+ * Install, update and uninstall functions for the module
+ *
+ * In this version we demonstrate the use of hook_update_N() to add
+ * a new database table.
+ *
+ */
+
+/**
+ * Implements hook_install().
+ */
+function srg_dataentry_install() {
+
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function sms_broasdcast_uninstall() {
+    $configs = Drupal::configFactory()->listAll();
+    foreach ($configs as $config) {
+        if (strpos($config, 'node.field_sms_') > 1) {
+            Drupal::configFactory()->getEditable($config)->delete();
+        }
+    }
+
+
+}

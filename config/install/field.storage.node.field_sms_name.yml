@@ -7,8 +7,8 @@ dependencies:
   enforced:
     module:
       - sms_broadcast
-id: node.field_sms_message
-field_name: field_sms_message
+id: node.field_sms_name
+field_name: field_sms_name
 entity_type: node
 type: string_long
 settings: {  }

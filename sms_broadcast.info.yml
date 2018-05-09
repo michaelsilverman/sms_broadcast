@@ -1,7 +1,7 @@
 name: 'SMS Broadcast'
 type: module
-description: 'SMS Broadcast moduke'
+description: 'SMS Broadcast module'
 core: 8.x
 package: 'SRG'
 dependencies:
-  - twilio
+  - devel

@@ -1,15 +1,18 @@
 langcode: en
 status: true
 dependencies:
-  config:
-    - node.type.sms_message
   module:
+    - node
     - text
-id: node.sms_message.field_sms_company
+  enforced:
+    module:
+      - sms_broadcast
+id: node.field_sms_company
 field_name: field_sms_company
 entity_type: node
-type: string_long
-module: core
+type: entity_reference
+settings: {  }
+module: text
 locked: false
 cardinality: 1
 translatable: true
