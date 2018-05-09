@@ -8,7 +8,7 @@ dependencies:
     module:
       - sms_broadcast
 id: node.field_sms_provider
-field_name: field_sms_message
+field_name: field_sms_provider
 entity_type: node
 type: list_string
 settings: {  }
