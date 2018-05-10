@@ -5,12 +5,12 @@ dependencies:
     - field.storage.node.field_sms_provider
     - node.type.sms_company
   module:
-    - text
+    - options
 id: node.sms_company.field_sms_provider
 field_name: field_sms_provider
 entity_type: node
 bundle: sms_company
-label: 'Select provider'
+label: 'Provider name'
 description: 'Provider name.'
 required: true
 translatable: false

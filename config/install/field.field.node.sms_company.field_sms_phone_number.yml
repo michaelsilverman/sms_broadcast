@@ -10,7 +10,7 @@ id: node.sms_company.field_sms_phone_number
 field_name: field_sms_phone_number
 entity_type: node
 bundle: sms_company
-label: 'Twilio phone number'
+label: 'Provider phone number'
 description: 'Phone number used by company.'
 required: true
 translatable: false

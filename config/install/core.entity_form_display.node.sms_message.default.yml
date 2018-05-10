@@ -1,0 +1,58 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.sms_message.field_sms_company
+    - field.field.node.sms_message.field_sms_image
+    - field.field.node.sms_message.field_sms_message
+    - field.field.node.sms_message.field_sms_name
+    - image.style.thumbnail
+    - node.type.sms_message
+  module:
+    - image
+id: node.sms_message.default
+targetEntityType: node
+bundle: sms_message
+mode: default
+content:
+  field_sms_company:
+    type: entity_reference_autocomplete
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_sms_image:
+    type: image_image
+    weight: 3
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_sms_message:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_sms_name: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

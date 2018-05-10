@@ -4,18 +4,27 @@ dependencies:
   config:
     - field.storage.node.field_sms_company
     - node.type.sms_message
+    - node.type.sms_company
   module:
     - text
 id: node.sms_message.field_sms_company
 field_name: field_sms_company
 entity_type: node
 bundle: sms_message
-label: 'Message'
-description: 'Text message.'
+label: 'Company'
+description: 'Select Company.'
 required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  display_summary: false
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      sms_company: sms_company
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
 field_type: entity_reference

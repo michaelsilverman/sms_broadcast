@@ -10,9 +10,12 @@ dependencies:
 id: node.field_sms_name
 field_name: field_sms_name
 entity_type: node
-type: string_long
-settings: {  }
-module: text
+type: string
+settings:
+  max_length: 40
+  is_ascii: false
+  case_sensitive: true
+module: core
 locked: false
 cardinality: 1
 translatable: true

@@ -3,16 +3,12 @@ status: true
 dependencies:
   module:
     - node
-    - text
-  enforced:
-    module:
-      - sms_broadcast
-id: node.field_sms_account_info
-field_name: field_sms_account_info
+id: node.field_sms_token_id
+field_name: field_sms_token_id
 entity_type: node
 type: string
 settings:
-  max_length: 40
+  max_length: 50
   is_ascii: false
   case_sensitive: false
 module: core
