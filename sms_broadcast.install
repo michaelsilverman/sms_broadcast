@@ -29,7 +29,7 @@ function sms_broadcast_uninstall() {
     foreach ($configs as $config) {
         if (strpos($config, 'field.node.sms_') + strpos($config, 'node.field_sms_') > 1) {
             Drupal::logger('SMS')->info($config);
-            Drupal::configFactory()->getEditable($config)->delete();
+    //        Drupal::configFactory()->getEditable($config)->delete();
         }
 
   //      Drupal::configFactory()->getEditable('field.storage.node.field_sms_message')->delete();

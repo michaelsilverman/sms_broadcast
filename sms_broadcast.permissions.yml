@@ -1,0 +1,9 @@
+sms_broadcast manage_messages:
+  title: 'Manage messages'
+  description: 'Allow user to manage broadcast messages'
+  restrict access: false
+
+sms_broadcast send_broadcast:
+  title: 'Send Broadcast'
+  description: 'Allow user to send broadcast messages'
+  restrict access: false

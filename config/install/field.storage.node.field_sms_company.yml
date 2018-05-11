@@ -3,7 +3,6 @@ status: true
 dependencies:
   module:
     - node
-    - text
   enforced:
     module:
       - sms_broadcast
@@ -11,8 +10,9 @@ id: node.field_sms_company
 field_name: field_sms_company
 entity_type: node
 type: entity_reference
-settings: {  }
-module: text
+settings:
+  target_type: node
+module: core
 locked: false
 cardinality: 1
 translatable: true

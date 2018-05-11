@@ -1,0 +1,23 @@
+sms_broadcast.selectmessage:
+  path: '/broadcast/selectmessage'
+  defaults:
+    _form: '\Drupal\sms_broadcast\Form\selectMessageForm'
+    _title: 'Select message to send'
+  requirements:
+     _access: 'TRUE'
+
+sms_broadcast.selectgroup:
+  path: '/broadcast/selectgroup'
+  defaults:
+    _form: '\Drupal\sms_broadcast\Form\selectMessageForm'
+    _title: 'Select group to send message'
+  requirements:
+     _access: 'TRUE'
+
+sms_broadcast.broadcast:
+  path: '/broadcast/send'
+  defaults:
+    _controller: '\Drupal\sms_broadcast\Controller\sendMessagesController::sendMessages'
+    _title: 'Select group to send message'
+  requirements:
+     _access: 'TRUE'

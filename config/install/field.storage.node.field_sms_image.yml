@@ -5,6 +5,9 @@ dependencies:
     - file
     - image
     - node
+  enforced:
+    module:
+      - sms_broadcast
 id: node.field_sms_image
 field_name: field_sms_image
 entity_type: node

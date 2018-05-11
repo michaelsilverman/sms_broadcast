@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.sms_message.field_sms_company
     - field.field.node.sms_message.field_sms_image
     - field.field.node.sms_message.field_sms_message
     - field.field.node.sms_message.field_sms_name

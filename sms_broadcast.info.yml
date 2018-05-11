@@ -6,3 +6,4 @@ package: 'SRG'
 dependencies:
   - telephone
   - devel
+  - srg_twilio

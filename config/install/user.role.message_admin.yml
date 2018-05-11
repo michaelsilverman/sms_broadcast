@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - sms_broadcast
+id: message_admin
+label: 'Message Admin'
+weight: 3
+is_admin: null
+permissions:
+  - 'sms_broadcast manage_messages'
+  - 'sms_broadcast send_broadcast'
+
